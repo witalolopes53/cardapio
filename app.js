@@ -213,11 +213,11 @@ function renderizarContainerFinal() {
   return `
   <div class="card">
     <button type="button" onclick="navegarPara('inicio')">
-      <img src="/public/icon/home.png" alt="Início">
+      <img src="/icon/home.png" alt="Início">
       <p>Inicio</p>
     </button>
     <button type="button" onclick="navegarPara('carrinho')">
-      <img src="/public/icon/shopping-cart.png" alt="Carrinho">
+      <img src="/icon/shopping-cart.png" alt="Carrinho">
       <div id="preco-cart" class="cart"></div>
     </button>
   </div>
