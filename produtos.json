@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "categoria": "Padaria e Pães",
+    "produtos": [
+      {
+        "id": 3,
+        "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyYYqKN_rVhFNm6w2100qtbpOQDD81aUfD_C7b6fzLGQ&s=10",
+        "nome": "Pão Francês",
+        "descricao": "Pão Francês - Unidade",
+        "preco": 0.75
+      },
+      {
+        "id": 2,
+        "imagem": "https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg",
+        "nome": "Bethânia Burguer",
+        "descricao": "Pão Brioshi, Hambúrguer Artesanal 130g, Queijo, Bacon, Alface, Tomate, Cebola Roxa E Maionese",
+        "preco": 28.00,
+        "opicionais": [{
+          "id":1,
+          "imagem": "https://www.estadao.com.br/resizer/v2/YA5RGEQR25OLBAJ55XQLZTXPBM.jpg?quality=80&auth=d99267dbfddd4f3eda1b3724da132da07b5892e79f0005eb6bdf70e37c347dbf&width=1200&height=1200&smart=true",
+          "nome": "Ovo",
+          "preco": 2.00
+        }]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "categoria": "Bebidas",
+    "produtos": [
+      {
+        "id": 25,
+        "imagem": "/public/imagens/Monster2.png",
+        "nome": "Bebida Energetica",
+        "descricao": "Bebida Energetica",
+        "preco": 11.00
+      }
+    ]
+  }
+]
