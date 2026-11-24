@@ -238,9 +238,9 @@ function renderizarBtnCart(qnt = 0) {
   if (qnt > 0) {
     return `
       <div class="item-qnt">
-        <button type="button" class="btn-menos" onclick="removeCarrinho(this)">&#8722;</button>
-        <p>${qnt}</p>
         <button type="button" class="btn-mais" onclick="addCarrinho(this)">&#43;</button>
+        <p>${qnt}</p>
+        <button type="button" class="btn-menos" onclick="removeCarrinho(this)">&#8722;</button>
       </div>`;
   }
 
