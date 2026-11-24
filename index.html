@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cardapio.css">
+    <title>Cardapio</title>
+</head>
+
+<body>
+
+    <main>
+        <!-- Pagina Inicial-->
+        <section id="inicio" class="page active">
+
+            <!-- Cabeçalho da Loja com suas informações-->
+            <div id="loja"></div>
+
+            <!-- O JavaScript vai preencher aqui dentro automaticamente -->
+            <div class="container" id="cardapio-container"></div>
+
+            <!-- Div para teste e modificações
+            <div class="container">
+                <div class="categoria-container">
+                    <h2>HAMBURGUER</h2>
+                    <div class="item-container">
+                        <div class="item-card">
+                            <div class="item-org">
+                                <div class="g-esquerda">
+                                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg"
+                                        alt="">
+                                    <div class="item-text">
+                                        <h3>Bethânia Burguer</h3>
+                                        <p class="descricao-cardapio">Pão Brioshi, Hambúrguer Artesanal 130g, Queijo,
+                                            Bacon,
+                                            Alface, Tomate, Cebola
+                                            Roxa E Maionese</p>
+                                        <h3>R$ 28,00</h3>
+                                    </div>
+                                </div>
+                                <div id="btnQuantidade">
+                                    <div class="item-qnt">
+                                        <button>&#43;</button>
+                                        <p>1</p>
+                                        <button>&#8722;</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-card">
+                            <div class="item-org">
+                                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg"
+                                    alt="">
+                                <button class="btn-teste">
+                                    <h3>Bethânia Burguer</h3>
+                                    <p class="descricao-cardapio">Pão Brioshi, Hambúrguer Artesanal 130g, Queijo, Bacon,
+                                        Alface, Tomate, Cebola
+                                        Roxa E Maionese</p>
+                                    <div class="preco">
+                                        <h3>R$ 28,00</h3>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="abrir">Clique aqui</button>
+                </div>
+            </div>
+            -->
+
+            <!-- Projeto Modal
+            <dialog id="modal-produto" class="modal">
+
+                <button id="fechar">&larr; Voltar</button>
+                <div class="modal-card">
+                    <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg"
+                        alt="">
+                    <h3>Bethânia Burguer</h3>
+                    <div class="descricao">
+                        <p>Pão Brioshi, Hambúrguer Artesanal 130g, Queijo, Bacon,
+                            Alface, Tomate, Cebola
+                            Roxa E Maionese</p>
+                    </div>
+                </div>
+
+                <div class="container-item-modal">
+                    <h3>Adicionais</h3>
+
+                    <div class="item-modal">
+                        <div class="item-org">
+                            <div class="item-org">
+                                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg"
+                                    alt="">
+                                <h4>Bethânia Burguer</h4>
+                            </div>
+                            <div class="item-checkbox">
+                                <h4>R$ 2,00</h4>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-modal">
+                        <div class="item-org">
+                            <div class="item-org">
+                                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg"
+                                    alt="">
+                                <h4>Bethânia Burguer</h4>
+                            </div>
+                            <div class="item-checkbox">
+                                <h4>R$ 2,00</h4>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-modal">
+                        <div class="item-org">
+                            <div class="item-org">
+                                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg"
+                                    alt="">
+                                <h4>Bethânia Burguer</h4>
+                            </div>
+                            <div class="item-checkbox">
+                                <h4>R$ 2,00</h4>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-modal">
+                        <div class="item-org">
+                            <div class="item-org">
+                                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg"
+                                    alt="">
+                                <h4>Bethânia Burguer</h4>
+                            </div>
+                            <div class="item-checkbox">
+                                <h4>R$ 2,00</h4>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-modal">
+                        <div class="item-org">
+                            <div class="item-org">
+                                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg"
+                                    alt="">
+                                <h4>Bethânia Burguer</h4>
+                            </div>
+                            <div class="item-checkbox">
+                                <h4>R$ 2,00</h4>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-modal">
+                        <div class="item-org">
+                            <div class="item-org">
+                                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg"
+                                    alt="">
+                                <h4>Bethânia Burguer</h4>
+                            </div>
+                            <div class="item-checkbox">
+                                <h4>R$ 2,00</h4>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-modal">
+                        <div class="item-org">
+                            <div class="item-org">
+                                <img src="https://cloudfront-us-east-1.images.arcpublishing.com/estadao/77XTHHCCLBEXLC2Y5RK4PN37CE.jpg"
+                                    alt="">
+                                <h4>Bethânia Burguer</h4>
+                            </div>
+                            <div class="item-checkbox">
+                                <h4>R$ 2,00</h4>
+                                <input type="checkbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="final-modal">
+                    <div class="card">
+                        <button>Avançar</button>
+                    </div>
+                </div>
+            </dialog>
+            -->
+
+            <!--Container final onde aparece os botões Inicio e Carrinho-->
+            <div class="final-container" id="final-container"></div>
+
+            <!-- Div teste e modificação container final
+            <div class="final-container">
+                <div class="card">
+                    <button>
+                        <img src="/public/icon/home.png" alt="">
+                        <p>Inicio</p>
+                    </button>
+
+                    <button>
+                        <img src="/public/icon/shopping-cart.png" alt="">
+                        <div class="cart">
+                            <p id="preco-cart"></p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            -->
+
+        </section>
+
+        <!--Carrinho-->
+        <section id="carrinho" class="page">
+
+            <!-- Topo -->
+            <div class="carrinho-container">
+                <button onclick="navegarPara('inicio')">&larr; Voltar</button>
+                <div class="carrinho-card">
+                    <h2>Carrinho</h2>
+
+                    <div id="itens-carrinho"></div> 
+                    
+                    <!-- Item Carrinho Modelo
+                    <div class="carrinho-item">
+                        <div class="carrinho-titulo">
+                            <img src="/public/imagens/Monster2.png" alt="">
+                            <h3>Bebida Energetica</h3>
+                        </div>
+                        <div class="carrinho-preco">
+                            <h3>R$ 11,00</h3>
+                            <div>
+                                <div class="carrinho-qnt">
+                                    <button>&#43;</button>
+                                    <p>1</p>
+                                    <button>&#8722;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+            </div>
+
+            <!-- Container final -->
+            <div class="final-container">
+                <div class="card">
+                    <div class="total-org">
+                        <div class="total-descricao">
+                            <h3>SubTotal:</h3>
+                            <h3 id="total-carrinho"></h3>
+                        </div>
+                    </div>
+                    <button class="continuar">Continuar Comprando</button>
+                    <button class="finalizar">Finalizar</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
